@@ -1,0 +1,63 @@
+
+body {
+    background-color: greenyellow;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: greenyellow;
+}
+
+
+section {
+    padding: 10px;
+}
+
+
+section img {
+    width: 100%;
+    height: auto;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    article {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    article {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
